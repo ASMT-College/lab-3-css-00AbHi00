@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media  (max-width:500px) {
+        .row:nth-child(2){
+            flex-direction: column-reverse!important;
+        }   
+    }
+
+    *{
+        margin:0;
+        box-sizing: border-box;
+        font-size: 2rem;
+        color: #e4d315;
+        text-align: center;
+        
+    }
+    .container{
+        background-color: rgb(232, 187, 187);
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row{
+        height: 10vh;
+        flex: 2;
+        margin: 2px;
+        justify-content:  center;
+        align-content: center;
+    }
+    .row:nth-child(1){
+        background-color: #29084c;
+    }
+    .row:nth-child(2){
+        background-color: #002da0;
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+    .row:nth-child(3){
+        background-color: #0e0051;
+    }
+    .col{
+        height: 100%;
+        width: 100%;
+        margin: 1px;
+        align-content: center;
+    }
+    .col:nth-child(1){
+        background-color: #004d74;
+    }
+    .col:nth-child(2){
+        background-color: #41349f;
+    }  
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            Header
+        </div>
+        <div class="row">
+            <div class="col">
+                Left
+            </div>
+            <div class="col">
+                Body
+            </div>
+            <div class="col">
+                Sidebar
+            </div>
+        </div>
+        <div class="row">
+            Footer
+        </div>
+        
+    </div>
+</body>
+</html>
